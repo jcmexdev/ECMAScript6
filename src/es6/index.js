@@ -67,3 +67,36 @@ console.log(global);
 console.log(globalLet);
 const a = 'b';
 a = 'a'; //esto no es permitido porque es una constante
+
+//parámetros en objetos
+//es5
+let name = 'juan';
+let age = 25;
+obj = { name: name, age: age };
+//es6
+obj2 = { name, age };
+
+//arrow functions o funciones flecha
+const names = [
+  { name: 'Juan', age: 41 },
+  { name: 'Carlos', age: 45 }
+];
+console.log('ES5');
+const listOfNames = names.map(function(item) {
+  console.log(item.name);
+});
+console.log('ES6');
+const listOfNames2 = names.map(item => console.log(item.name));
+
+//promises
+const myPromise = new Promise((resolve, reject) => {
+  if (true) {
+    resolve('Hey');
+  } else {
+    reject('Ups!!');
+  }
+});
+
+myPromise
+  .then(response => console.log(response))
+  .catch(error => console.log(error));
