@@ -20,3 +20,50 @@ let epicPhrase = hello + ' ' + world;
 console.log(epicPhrase);
 let epicPhrase2 = `${hello} ${world}`;
 console.log(epicPhrase2);
+
+//multiline
+let lorem =
+  'Lorem ipsum dolor, sit amet consectetur adipisicing \n' +
+  'una frase epica de este lado';
+
+let lorem2 = `Lorem ipsum dolor, sit amet consectetur adipisicing 
+  la misma frase más epica en es6`;
+
+console.log(lorem);
+console.log(lorem2);
+
+//DESTRUCTURING
+let person = {
+  name: 'juan',
+  age: 25,
+  country: 'MX'
+};
+console.log(person.name, person.age, person.country);
+let { name, age, country } = person;
+console.log(name, age, country);
+
+//OPERADOR DE PROPAGACIÓN  SPREAD OPERATOR
+let team1 = ['oscar', 'julian', 'ricardo'];
+let team2 = ['valeria', 'yesica', 'camila'];
+let education = ['david', ...team1, ...team2];
+console.log(education);
+//output
+// [
+//   'david',   'oscar',
+//   'julian',  'ricardo',
+//   'valeria', 'yesica',
+//   'camila'
+// ]
+
+//let y const en vez de var
+//let y const tienen scope de bloque
+{
+  var global = 'Global var';
+}
+{
+  let globalLet = 'Global let';
+}
+console.log(global);
+console.log(globalLet);
+const a = 'b';
+a = 'a'; //esto no es permitido porque es una constante
