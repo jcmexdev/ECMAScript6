@@ -1,0 +1,17 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "este es un proyecto que muestra las caracteristicas de ecmascript",
+  "main": "\t ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecmascript",
+    "javascript",
+    "es6",
+    "6s7"
+  ],
+  "author": "Juan Carlos García Esquivel",
+  "license": "MIT"
+}
